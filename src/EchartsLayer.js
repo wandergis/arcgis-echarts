@@ -1,14 +1,15 @@
 define([
   "dojo/_base/declare",
-  "dojo/_base/lang","esri/geometry/Point","esri/geometry/ScreenPoint"], function (declare, lang,Point,ScreenPoint) {
+  "dojo/_base/lang", "esri/geometry/Point", "esri/geometry/ScreenPoint"
+], function(declare, lang, Point, ScreenPoint) {
   return declare("EchartsLayer", null, {
     name: "EchartsLayer",
     _map: null,
     _ec: null,
     _geoCoord: [],
-    _option:null,
+    _option: null,
     _mapOffset: [0, 0],
-    constructor: function (map, ec) {
+    constructor: function(map, ec) {
       this._map = map;
       var div = this._echartsContainer = document.createElement('div');
       div.style.position = 'absolute';
@@ -218,26 +219,30 @@ define([
        * @private
        */
       self._bindEvent = function() {
-        self._map.on('zoom-end', function (e) {
+        self._map.on('zoom-end', function(e) {
           self.setOption(self._option);
         });
-        self._map.on('zoom-start', function (e) {
+        self._map.on('zoom-start', function(e) {
           self._ec.clear();
         });
-        self._map.on('pan', function (e) {
+        self._map.on('pan', function(e) {
           self._ec.clear();
         });
-        self._map.on('pan-end', function (e) {
+        self._map.on('pan-end', function(e) {
           self.setOption(self._option);
         });
 
-        self._ec.getZrender().on('dragstart', function (e) {
+        self._ec.getZrender().on('dragstart', function(e) {
           self._map.disablePan();
           //self._ec.clear();
         });
-        self._ec.getZrender().on('dragend', function (e) {
+        self._ec.getZrender().on('dragend', function(e) {
           self._map.enablePan();
           //self.setOption(self._option);
+        });
+        self._ec.getZrender().on('mousewheel', function(e) {
+          self._ec.clear();
+          self._map.emit('mouse-wheel', e.event)
         });
       };
 
@@ -245,4 +250,3 @@ define([
 
   });
 });
-  
