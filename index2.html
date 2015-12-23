@@ -27,13 +27,13 @@
         parseOnLoad: true,
         packages: [{
           "name": "src",
-           "location": "/src"//for demo;location.pathname.replace(/\/[^/]+$/, '') + "/src"
+           "location": location.pathname.replace(/\/[^/]+$/, '') + "/src"
         }]
       };
     </script>
     <script src="https://js.arcgis.com/3.15/"></script>
-    <script src="../lib/echarts.source.js"></script>
-    <script src="../lib/jquery-1.11.2.min.js"></script>
+    <script src="lib/echarts.source.js"></script>
+    <script src="lib/jquery-1.11.2.min.js"></script>
      <script>
       var map;
       require(["esri/map","src/EchartsLayer","dojo/domReady!"], function(Map,EchartsLayer) {
