@@ -1,10 +1,10 @@
 {
   "name": "arcgis-echarts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A plugin for ArcGIS JS API to load echarts map and Make big data visualization easier.",
   "main": "src/EchartsLayer.js",
   "scripts": {
-    "start":"http-server"
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
