@@ -1,0 +1,26 @@
+{
+  "name": "arcgis-echarts",
+  "version": "0.1.0",
+  "description": "A plugin for ArcGIS JS API to load echarts map and Make big data visualization easier.",
+  "main": "src/EchartsLayer.js",
+  "scripts": {
+    "start":"http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandergis/arcgis-echarts.git"
+  },
+  "keywords": [
+    "ArcGIS",
+    "javascript",
+    "esri",
+    "echarts",
+    "visualization"
+  ],
+  "author": "wandergis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wandergis/arcgis-echarts/issues"
+  },
+  "homepage": "https://github.com/wandergis/arcgis-echarts#readme"
+}
