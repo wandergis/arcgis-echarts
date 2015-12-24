@@ -2,7 +2,7 @@
 A plugin for ArcGIS JS API to load echarts map and Make big data visualization easier.
 
 # 基于ArcGIS Javascript API 扩展 Echarts，使Echarts的地图可以加到ArcGIS Javascript API的地图上
-> 鉴于之前写了一个leaflet加载echarts的扩展[传送门](https://github.com/wandergis/leaflet-echarts)，由此萌生了结合ArcGIS Javascript Api和echarts来制作炫酷的可视化地图，没想到整个实现的过程相当顺利，花费了一个多小时写出来这个扩展，加载效果也还不错。强烈建议大家使用谷歌浏览器来查看示例，我试了几个浏览器，只有在谷歌浏览器才能得到最好的效果展现，**只有在谷歌浏览器才能得到最好的效果展现，只有在谷歌浏览器才能得到最好的效果展现！！！**重要的事情说三遍。
+> 鉴于之前写了一个leaflet加载echarts的扩展[传送门](https://github.com/wandergis/leaflet-echarts)，由此萌生了结合ArcGIS Javascript Api和echarts来制作炫酷的可视化地图，没想到整个实现的过程相当顺利，花费了一个多小时写出来这个扩展，加载效果也还不错。强烈建议大家使用谷歌浏览器来查看示例，我试了几个浏览器，**只有在谷歌浏览器才能得到最好的效果展现，只有在谷歌浏览器才能得到最好的效果展现，只有在谷歌浏览器才能得到最好的效果展现！！！**重要的事情说三遍。
 
 > Just visit it by *`chrome`*!!!
 
