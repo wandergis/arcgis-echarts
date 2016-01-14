@@ -43,3 +43,8 @@ A plugin for ArcGIS JS API to load echarts map and Make big data visualization e
 ![](https://raw.githubusercontent.com/wandergis/arcgis-echarts/master/demo/demo1.gif)
 
 ![](https://raw.githubusercontent.com/wandergis/arcgis-echarts/master/demo/demo2.gif)
+
+### 群友@Jason_苏州提供的两个使用demo
+![](https://raw.githubusercontent.com/wandergis/arcgis-echarts/master/demo/demo3.gif)
+
+![](https://raw.githubusercontent.com/wandergis/arcgis-echarts/master/demo/demo4.gif)
